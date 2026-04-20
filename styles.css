@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 /* base page styles */
 :root {
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--page-bg, #f5f7fb);
   color: rgb(34, 41, 57);
   margin: 0;
@@ -133,11 +133,10 @@ p {
   font-size: 1rem;
 }
 
-img.level-sketch {
+img.sketch {
   display: block;
   width: 100%;
-  max-width: 500px;
-  min-width: 200px;
+  max-width: 100%;
   height: auto;
   margin: 1rem auto 0.5rem auto;
   border-style: solid;
@@ -203,7 +202,7 @@ input[type="radio"] {
   display: inline;
 }
 
-.submit-btn {
+.submit-button {
   width: 8rem;
   height: 2.8rem;
   border-style: solid;
@@ -266,4 +265,64 @@ footer {
   padding: 1rem;
   margin: 1.5rem auto 0 auto;
   border-radius: 12px;
+}
+
+.roles-flex {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.role-card {
+  background-color: #f8fbff;
+  border: 1px solid #d8e2f3;
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1 1 14rem;
+}
+
+.next-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.step-card {
+  background-color: #f8fbff;
+  border: 1px solid #d8e2f3;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 0.75rem;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 0.85rem;
+  }
+
+  .roles-flex {
+    flex-direction: column;
+  }
+
+  .next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  img.sketch,
+  audio,
+  video {
+    max-width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    max-width: 14rem;
+  }
 }

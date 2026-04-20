@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* base page styles */
+:root {
+  --page-bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --accent-color: #4c6ef5;
+  --soft-accent: rgba(76, 110, 245, 0.12);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f5f7fb;
+  background-color: var(--page-bg, #f5f7fb);
   color: rgb(34, 41, 57);
   margin: 0;
   padding: 1.25rem;
   max-width: 70rem;
   min-width: 20rem;
+  position: static;
 }
 
 header {
@@ -32,6 +40,7 @@ header {
   border-color: #d7def0;
   border-width: 2px;
   border-radius: 14px;
+  position: relative;
 }
 
 .meeting-date {
@@ -43,7 +52,7 @@ header {
 }
 
 nav {
-  background-color: #e8eefc;
+  background-color: color-mix(in srgb, white 82%, #4c6ef5 18%);
   padding: 1rem;
   margin: 0 auto 1.25rem auto;
   border-style: solid;
@@ -52,8 +61,12 @@ nav {
   border-radius: 12px;
 }
 
+nav li {
+  margin-bottom: 0.35em;
+}
+
 nav a {
-  color: #2f5bd3;
+  color: var(--accent-color, #4c6ef5);
   text-decoration: none;
   display: inline-block;
 }
@@ -82,7 +95,13 @@ section {
 }
 
 section.content-section {
-  background-color: #ffffff;
+  background-color: var(--card-bg, #ffffff);
+}
+
+#new {
+  background-color: rgba(76, 110, 245, 0.06);
+  border-color: color(display-p3 0.35 0.48 0.92 / 0.95);
+  min-width: 18rem;
 }
 
 .ideas-box {
@@ -96,6 +115,7 @@ section.content-section {
   border-color: #b9c8f2;
   border-width: 1px;
   border-radius: 10px;
+  box-shadow: 0 0 0.4cm rgba(0, 0, 0, 0.06);
 }
 
 h1,
@@ -104,8 +124,13 @@ h3 {
   color: #243b53;
 }
 
+h2 {
+  text-align: left;
+}
+
 p {
   line-height: 1.5;
+  font-size: 1rem;
 }
 
 img.level-sketch {
@@ -183,9 +208,9 @@ input[type="radio"] {
   height: 2.8rem;
   border-style: solid;
   border-color: #3f63dd;
-  border-width: 2px;
+  border-width: 0.125in;
   border-radius: 10px;
-  background-color: #4c6ef5;
+  background-color: var(--accent-color, #4c6ef5);
   color: white;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   display: inline-block;
@@ -210,6 +235,29 @@ hr {
 summary:hover {
   color: #1d4ed8;
   text-decoration: underline;
+}
+
+details {
+  background-color: var(--soft-accent, rgba(76, 110, 245, 0.12));
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+/* :has() selector */
+section:has(img) {
+  background-color: #f8fbff;
+}
+
+/* nested selectors */
+nav.toc {
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  & a {
+    font-weight: 600;
+  }
 }
 
 footer {

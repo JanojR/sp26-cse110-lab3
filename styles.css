@@ -55,6 +55,15 @@ nav {
 nav a {
   color: #2f5bd3;
   text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: #1d4ed8;
 }
 
 main {
@@ -72,7 +81,7 @@ section {
   border-radius: 12px;
 }
 
-.content-section {
+section.content-section {
   background-color: #ffffff;
 }
 
@@ -99,7 +108,7 @@ p {
   line-height: 1.5;
 }
 
-img.sketch {
+img.level-sketch {
   display: block;
   width: 100%;
   max-width: 500px;
@@ -117,6 +126,33 @@ video {
   width: 100%;
   max-width: 31.25rem;
   margin: 0.5rem 0;
+  display: block;
+}
+
+/* descendant combinator */
+section img {
+  background-color: #ffffff;
+}
+
+/* child combinator */
+form > fieldset {
+  background-color: #f8fbff;
+}
+
+/* adjacent sibling combinator */
+h3 + p {
+  font-style: italic;
+  color: #4b5563;
+}
+
+/* general sibling combinator */
+h3 ~ div {
+  margin-top: 0.5rem;
+}
+
+/* attribute selector */
+img[alt] {
+  outline: 2px dashed #cbd5e1;
 }
 
 .feedback-form {
@@ -137,7 +173,12 @@ textarea {
   max-width: 28rem;
 }
 
-.submit-button {
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+.submit-btn {
   width: 8rem;
   height: 2.8rem;
   border-style: solid;
@@ -147,6 +188,28 @@ textarea {
   background-color: #4c6ef5;
   color: white;
   padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  display: inline-block;
+}
+
+.submit-btn:hover {
+  background-color: #3b5bdb;
+}
+
+.submit-btn:active {
+  background-color: #2f52cf;
+}
+
+hr {
+  display: none;
+}
+
+.media-section {
+  display: block;
+}
+
+summary:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 footer {

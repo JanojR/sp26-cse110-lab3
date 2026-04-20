@@ -215,11 +215,11 @@ input[type="radio"] {
   display: inline-block;
 }
 
-.submit-btn:hover {
+.submit-button:hover {
   background-color: #3b5bdb;
 }
 
-.submit-btn:active {
+.submit-button:active {
   background-color: #2f52cf;
 }
 

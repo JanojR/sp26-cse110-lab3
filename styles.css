@@ -11,6 +11,8 @@ body {
   color: rgb(34, 41, 57);
   margin: 0;
   padding: 1.25rem;
+  max-width: 70rem;
+  min-width: 20rem;
 }
 
 header {
@@ -22,6 +24,14 @@ header {
 
 #top-header {
   background-color: #ffffff;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  border-style: solid;
+  border-color: #d7def0;
+  border-width: 2px;
+  border-radius: 14px;
 }
 
 .meeting-date {
@@ -35,6 +45,11 @@ header {
 nav {
   background-color: #e8eefc;
   padding: 1rem;
+  margin: 0 auto 1.25rem auto;
+  border-style: solid;
+  border-color: #c8d5f4;
+  border-width: 2px;
+  border-radius: 12px;
 }
 
 nav a {
@@ -50,10 +65,28 @@ main {
 section {
   background-color: white;
   padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  border-style: solid;
+  border-color: #dde5f4;
+  border-width: 1px;
+  border-radius: 12px;
 }
 
 .content-section {
   background-color: #ffffff;
+}
+
+.ideas-box {
+  background-color: #eef2ff;
+  margin: 0.75rem 0 0.25rem 0;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-style: solid;
+  border-color: #b9c8f2;
+  border-width: 1px;
+  border-radius: 10px;
 }
 
 h1,
@@ -66,8 +99,60 @@ p {
   line-height: 1.5;
 }
 
+img.sketch {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  height: auto;
+  margin: 1rem auto 0.5rem auto;
+  border-style: solid;
+  border-color: #9aa8c7;
+  border-width: 4px;
+  border-radius: 16px;
+}
+
+audio,
+video {
+  width: 100%;
+  max-width: 31.25rem;
+  margin: 0.5rem 0;
+}
+
+.feedback-form {
+  background-color: #ffffff;
+}
+
+fieldset {
+  padding: 1rem 1rem 1rem 1rem;
+  border-style: solid;
+  border-color: #ccd6eb;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+  max-width: 28rem;
+}
+
+.submit-button {
+  width: 8rem;
+  height: 2.8rem;
+  border-style: solid;
+  border-color: #3f63dd;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: #4c6ef5;
+  color: white;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
 footer {
   background-color: #ffffff;
   text-align: center;
   padding: 1rem;
+  margin: 1.5rem auto 0 auto;
+  border-radius: 12px;
 }

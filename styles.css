@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* base page styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fb;
+  color: rgb(34, 41, 57);
+  margin: 0;
+  padding: 1.25rem;
+}
+
+header {
+  background-color: #ffffff;
+  color: #1f2a44;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+#top-header {
+  background-color: #ffffff;
+}
+
+.meeting-date {
+  color: orange;
+}
+
+.topic-line {
+  color: hsl(218, 35%, 34%);
+}
+
+nav {
+  background-color: #e8eefc;
+  padding: 1rem;
+}
+
+nav a {
+  color: #2f5bd3;
+  text-decoration: none;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.55);
+  padding: 0.5rem;
+}
+
+section {
+  background-color: white;
+  padding: 1rem;
+}
+
+.content-section {
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  color: #243b53;
+}
+
+p {
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

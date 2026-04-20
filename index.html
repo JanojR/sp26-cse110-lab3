@@ -11,13 +11,13 @@
 
   <body>
 
-    <header>
+    <header id="top-header">
       <h1>2D Platformer Game First Design Meeting</h1>
-      <p><strong>Date:</strong> <span>April 14, 2026</span></p>
-      <p><em>Topic:</em> Brainstorming and initial planning</p>
+      <p><strong>Date:</strong> <span class="meeting-date">April 14, 2026</span></p>
+      <p class="topic-line"><em>Topic:</em> Brainstorming and initial planning</p>
     </header>
 
-    <nav>
+    <nav class="toc">
       <h2>Table of Contents</h2>
       <ul>
         <li><a href="#attendance">Attendance</a></li>
@@ -30,7 +30,7 @@
 
     <main>
 
-      <section id="attendance">
+      <section id="attendance" class="content-section">
         <h2>Attendance</h2>
         <ul>
           <li><strong>Janoj</strong></li>
@@ -42,7 +42,7 @@
 
       <hr>
 
-      <section id="agenda">
+      <section id="agenda" class="content-section">
         <h2>Agenda</h2>
         <ol>
           <li>Discuss overall game concept/idea</li>
@@ -54,7 +54,7 @@
 
       <hr>
 
-      <section id="unfinished">
+      <section id="unfinished" class="content-section">
         <h2>Unfinished Business from last meeting</h2>
         <p>
           Still deciding between fantasy and sci-fi theme.<br>
@@ -64,7 +64,7 @@
 
       <hr>
 
-      <section id="new">
+      <section id="new" class="content-section">
         <h2>New Business need to talk about</h2>
 
         <h3>Player and Enemy Abilities</h3>
@@ -72,7 +72,7 @@
           Need to talk about player abilities and enemy abilities.
         </p>
 
-        <div>
+        <div class="ideas-box">
           <ul>
             <li>Player can double jump</li>
             <li>Enemies include drones and ground bots</li>
@@ -83,7 +83,7 @@
 
       <hr>
 
-      <section id="misc">
+      <section id="misc" class="content-section">
         <h2>Miscellaneous</h2>
 
         <details>
@@ -98,22 +98,22 @@
 
       <hr>
 
-      <section>
+      <section class="content-section">
         <h2>Diagram</h2>
-        <p>Rough sketch of a level layout:</p>
+        <p>Rough sketch of a level layout for the <mark>first draft</mark>:</p>
         <img src="2D-platformer-level-sketch.png" alt="Sketch of platformer level with platforms, enemies, and obstacles">
       </section>
 
       <hr>
 
-      <section>
+      <section class="content-section">
         <h2>Audio Recording</h2>
         <audio controls>
           <source src="trialaudio.mp3" type="audio/mpeg">
         </audio>
       </section>
 
-      <section>
+      <section class="content-section">
         <h2>Video Recording</h2>
         <video controls width="300">
           <source src="trialvid.mp4" type="video/mp4">
@@ -122,7 +122,7 @@
 
       <hr>
 
-      <section>
+      <section class="content-section">
         <h2>Feedback Form</h2>
 
         <form>
@@ -154,9 +154,9 @@
               Favorite topic:<br>
               <input list="topics" name="topic">
               <datalist id="topics">
-                <option value="Gameplay">
-                <option value="Design">
-                <option value="Art">
+                <option value="Gameplay"></option>
+                <option value="Design"></option>
+                <option value="Art"></option>
               </datalist>
             </p>
 
@@ -182,7 +182,7 @@
 
     </main>
 
-    <footer>
+    <footer style="border-top: 3px solid #4c6ef5;">
       <p>Meeting notes for CSE project team</p>
     </footer>
 
